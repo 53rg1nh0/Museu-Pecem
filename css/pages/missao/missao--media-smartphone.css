@@ -1,0 +1,15 @@
+@media screen and (max-width:666px) {
+    .missao--title {
+        margin-bottom: -20px;
+        font-size: 1.25rem;
+    }
+
+    .missao--img-fundo {
+        height: 120px;
+        background-size: 200%;
+    }
+
+    .missao-objetivos-valores {
+        flex-direction: column;
+    }
+}
