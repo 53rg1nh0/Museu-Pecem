@@ -137,17 +137,21 @@
             border-left: 4px solid var(--secudary-color);
         }
 
-        :has(.item:focus)>li .item {
+        :has(.item:focus)>li .item, :has(.subitem:focus)>li .item {
             text-align: left;
         }
 
-        .item:focus+.submenu {
+        .item:focus+.submenu, .submenu:has(.subitem:focus) {
             position: absolute;
             height: var(--altura-conteudo);
             border-radius: 0;
             width: 50vw;
             top: 9.12rem;
             right: 0;
+        }
+
+        .submenu:has(.subitem:focus){
+            top: 10rem;
         }
     }
 

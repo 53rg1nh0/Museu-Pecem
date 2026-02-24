@@ -56,9 +56,9 @@ function loadPage(id, file) {
 loadComponent("baner", "baner.html");
 loadComponent("navegacao", "navegacao.html");
 
-loadPage("page-index","page-index.html")
-loadPage("page-missao","page-missao.html")
-loadPage("page-comunidade--documentos","page-comunidade--documentos.html")
+//loadPage("page-index", "page-index.html")
+//loadPage("page-missao", "page-missao.html")
+//loadPage("page-comunidade--documentos", "page-comunidade--documentos.html")
 
 loadComponent("footer", "footer.html");
 // Carrega os componentes e paginas
