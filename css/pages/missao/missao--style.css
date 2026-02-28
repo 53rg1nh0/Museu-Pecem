@@ -1,18 +1,5 @@
-.page-missao {
-    background-color: #ebb84b3d;
-
-}
-
-.missao--title {
-    color: var(--secudary-color);
-}
-
 .missao--img-fundo {
     background-image: url('../../../assets/images/pages/missao/missao.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    display: flex;
-    align-items: end;
 }
 
 .missao-objetivos-valores {
@@ -33,8 +20,7 @@
 }
 
 .missao-objetivos-valores .subtitle,
-.missao-objetivos-valores .paragrafe,
-.missao--cronologia .paragrafe {
+.missao-objetivos-valores .paragrafe{
     text-align: center;
     margin: 0;
 }
@@ -65,91 +51,22 @@
 }
 
 .missao-objetivos-valores .subtitle,
-.missao-objetivos-valores .paragrafe,
-.missao--cronologia .paragrafe {
+.missao-objetivos-valores .paragrafe {
     padding: var(--padding-gap);
 }
 
-.subtitle,
-.paragrafe {
+.subtitle {
     text-align: center;
 }
 
-.missao--cronologia {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: var(--padding-gap);
-    padding-left: var(--padding-gap);
-    width: fit-content;
-    margin: auto;
+.missao--cronologia{
+    gap: var(--padding-gap);
 }
 
-.missao--cronologia::before {
-    content: "";
-    width: 6px;
-    transform: translateX(3px);
-    height: 100%;
-    background-color: black;
-    border-radius: 6px;
-    position: absolute;
-    right: 50%;
-    bottom: 0;
+.ponto-linha-cronologica{
+    padding-top: var(--padding-gap);
 }
 
-.missao--cronologia .paragrafe {
-    max-width: 50ch;
-    text-align: right;
-    padding: var(--padding-gap) 0
-}
-
-.missao--cronologia .paragrafe:nth-child(2n-1) {
-    margin-right: 60ch;
-}
-
-.missao--cronologia .paragrafe:nth-child(2n) {
-    text-align: left;
-    margin-left: 60ch;
-}
-
-.missao--cronologia .paragrafe:first-child::before,
-.missao--cronologia .paragrafe:last-child::before {
-    content: "";
-    height: 24px;
-    width: 24px;
-    position: absolute;
-    margin: 0 50%;
-    background-color: black;
-    border-radius: 50%;
-}
-
-.missao--cronologia .paragrafe strong{
-    position: absolute;
-    border-radius: 50%;
-    background-color: white;
-    padding: 5px;
-    border: 4px solid black;
-    margin-top: -8px;
-}
-
-.missao--cronologia .paragrafe:nth-child(2n-1) strong {
-    right: 50%;
-    transform: translateX(29px);
-}
-
-.missao--cronologia .paragrafe:nth-child(2n) strong {
-    left: 50%;
-    transform: translatex(-29px);
-}
-
-.missao--cronologia .paragrafe:first-child::before {
-    left: 0;
-    transform: translateX(-12px);
-    top: 0;
-}
-
-.missao--cronologia .paragrafe:last-child::before {
-    right: 0;
-    transform: translateX(12px);
-    bottom: 0;
+.missao--cronologia .foto-evento{
+    height: fit-content;
 }

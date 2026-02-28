@@ -106,7 +106,7 @@
         font-size: 3.5rem;
     }
 
-    .contato-copyrigth--inside{
+    .contato-copyrigth--inside {
         width: var(--desktop-width);
         margin: auto;
         padding: var(--padding-gap) 0;
@@ -118,5 +118,65 @@
 
     .logos {
         align-content: center;
+    }
+
+    /* conteudo */
+
+    .width {
+        width: var(--desktop-width);
+        margin: auto;
+    }
+
+    .title {
+        width: var(--desktop-width);
+    }
+
+    .linha-cronologica::before {
+        right: 50%;
+    }
+
+    .ponto-linha-cronologica {
+        justify-content: start;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .ponto-linha-cronologica:first-child::before,
+    .ponto-linha-cronologica:last-child::before {
+        left: 50%;
+    }
+
+    .ponto-linha-cronologica:nth-child(2n) .evento {
+        text-align:start;
+    }
+
+    .ponto-linha-cronologica:nth-child(2n + 1) .evento {
+        text-align: end;
+    }
+
+    .ponto-linha-cronologica:nth-child(2n) .foto-evento {
+        background-position: right;
+    }
+
+    .ponto-linha-cronologica:nth-child(2n + 1) .foto-evento {
+        background-position:left;
+    }
+
+    .ponto-linha-cronologica:nth-child(2n){
+        flex-direction: row-reverse;
+    }
+
+    .data {
+        left: 50%;
+        transform: translateX(-3.2ch);
+    }
+
+    .evento {
+        flex: 1;
+        padding: 0;
+    }
+
+    .foto-evento {
+        flex: 1;
     }
 }

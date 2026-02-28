@@ -3,11 +3,11 @@
         --padding-gap: 1.7rem;
         --altura-conteudo: calc(100vh - 10.05rem);
         --scala: 203.28 / 315;
-        
+        --margin-left-evento: 4.5ch;
     }
 
     .baner {
-        padding:0 var(--padding-gap);
+        padding: 0 var(--padding-gap);
 
         justify-content: space-between;
         align-items: center;
@@ -34,7 +34,7 @@
         padding: 1rem var(--padding-gap);
     }
 
-    .lbl-menu{
+    .lbl-menu {
         padding: .64rem 0;
         cursor: pointer;
     }
@@ -119,6 +119,12 @@
         margin-top: .7rem;
     }
 
+     .submenu:has(.subitem:focus) {
+        padding: .7rem;
+        height: fit-content;
+        margin-top: .7rem;
+    }
+
     @media screen and (max-height: 820px) {
 
         .menu {
@@ -137,11 +143,13 @@
             border-left: 4px solid var(--secudary-color);
         }
 
-        :has(.item:focus)>li .item, :has(.subitem:focus)>li .item {
+        :has(.item:focus)>li .item,
+        :has(.subitem:focus)>li .item {
             text-align: left;
         }
 
-        .item:focus+.submenu, .submenu:has(.subitem:focus) {
+        .item:focus+.submenu,
+        .submenu:has(.subitem:focus) {
             position: absolute;
             height: var(--altura-conteudo);
             border-radius: 0;
@@ -150,7 +158,7 @@
             right: 0;
         }
 
-        .submenu:has(.subitem:focus){
+        .submenu:has(.subitem:focus) {
             top: 10rem;
         }
     }
@@ -160,11 +168,49 @@
     }
 
     .logos {
-        align-content:center;
+        align-content: center;
     }
 
-     .title, .subtitle, .paragrafe{
+    .title {
+        width: 100%;
+    }
+
+    .title,
+    .subtitle,
+    .paragrafe {
         padding-left: var(--padding-gap);
         padding-right: var(--padding-gap);
     }
+
+    .linha-cronologica{
+        width: 70ch;
+    }
+
+    .linha-cronologica::before{
+        left: 55px
+    }
+
+    .ponto-linha-cronologica {
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .ponto-linha-cronologica:first-child::before,
+    .ponto-linha-cronologica:last-child::before {
+        left: 60px
+    }
+
+    .evento {
+        margin-left: var(--margin-left-evento);
+    }
+
+    .foto-evento{
+        background-position: center;
+        margin-left: var(--margin-left-evento);
+    }
+
+    .data {
+        transform: translateX(-65px);
+    }
+
 }

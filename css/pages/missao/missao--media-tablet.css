@@ -1,14 +1,4 @@
 @media screen and (min-width: 666px) and (max-width: 1400px) {
-    .missao--title {
-        margin-bottom: -10px;
-        font-size: 2rem;
-    }
-
-    .missao--img-fundo {
-        height: 200px;
-        background-size: 150%;
-        background-position: bottom;
-    }
 
     .missao-objetivos-valores {
         flex-direction: column;
@@ -17,38 +7,7 @@
 
 @media screen and (max-width: 1100px) {
 
-    .missao--cronologia {
-        margin: auto;
-    }
+    
 
-    .missao--cronologia::before {
-        left: 40px;
-    }
 
-    .missao--cronologia .paragrafe:nth-child(n) {
-        max-width: 50ch;
-        text-align: left;
-        padding: var(--padding-gap) 0;
-        margin: 0;
-        margin-left: 8ch;
-    }
-
-    .missao--cronologia .paragrafe:first-child::before {
-        margin-left: 46px;
-    }
-
-    .missao--cronologia .paragrafe:last-child::before {
-        margin: 0;
-        left: 23px;
-    }
-
-    .missao--cronologia .paragrafe:nth-child(2n-1) strong {
-        left:-12px;
-        right: initial;
-    }
-
-    .missao--cronologia .paragrafe:nth-child(2n) strong {
-        left: 46px;
-        right: initial;
-    }
 }

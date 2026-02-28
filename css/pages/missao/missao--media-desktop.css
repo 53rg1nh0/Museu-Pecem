@@ -1,16 +1,5 @@
 @media screen and (min-width: 1400px) {
 
-    .missao--width {
-        width: var(--desktop-width);
-        margin: auto;
-    }
-
-    .missao--title {
-        margin: auto;
-        width: var(--desktop-width);
-        margin-bottom: 20px;
-    }
-
     .missao--img-fundo {
         height: 320px;
         background-size: cover;
@@ -23,9 +12,5 @@
 
     .missao-objetivos-valores article:nth-child(2) {
         width: 44%;
-    }
-
-    .missao--cronologia{
-        padding: var(--padding-gap) 0;
     }
 }
