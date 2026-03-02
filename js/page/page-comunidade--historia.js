@@ -1,0 +1,1 @@
+loadPage("page-comunidade--documentos", "page-comunidade--historia.html");
